@@ -99,7 +99,7 @@ nav {
     padding: 100px;
     /* Add padding as needed */
     background-color: #000000;
-    margin-top: 2px;
+    margin-top: 3px;
 }
 
 .greeting-text, .greeting-text h1 {
@@ -137,7 +137,7 @@ nav {
 #about {
         text-align: center;
         /* Centers the text */
-        margin-top: 2px;
+        margin-top: 5px;
         /* Adds some space between the nav bar and the greeting */
         padding: 100px;
         /* Adds padding inside the greeting section */
@@ -148,7 +148,7 @@ nav {
         line-height: 1.4em;
         font-style: normal;
         letter-spacing: -.05em;
-        background-color: #ffffff;
+        background-color: #d8d8d8;
         color: rgb(0, 0, 0);
 
     }
