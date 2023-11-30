@@ -1,0 +1,154 @@
+/* Resetting default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins';
+    /* Choose a font of your choice */
+    letter-spacing: -.05em
+}
+
+header {
+    background-color: #000000;
+    /* Dark background for the navbar */
+    color: white;
+    position: sticky;
+    top: 0;
+    /* Initial background color */
+    transition: background-color 0.3s;
+    /* Smooth transition for background color change */
+    z-index: 1000;
+    /* Ensures the navbar stays on top of other content */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    /* Adjusts spacing between navigation and social links */
+    align-items: center;
+    /* Vertically aligns items */
+    padding: 25px 10px;
+}
+
+.navigation-links,
+.social-links {
+    list-style: none;
+    display: flex;
+    margin-left: 20px;
+    margin-right: 50px;
+}
+
+.navigation-links li {
+    margin-left: 20px;
+    /* Space between each menu item */
+}
+
+.social-links li {
+    margin-left: 20px;
+}
+
+.navigation-links li a,.social-links li a {
+    color: white;
+    /* Icon color */
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 900;
+}
+
+.social-links li a i {
+    font-size: 20px;
+    /* Icon size */
+}
+
+.navigation-links li a:hover,.social-links li a:hover {
+    color: #949393;
+    /* Color on hover */
+}
+
+@media screen and (max-width: 600px) {
+
+    .navigation-links,
+    .social-links {
+        flex-direction: column;
+        width: 100%;
+        /* Ensures full width for smaller screens */
+        align-items: center;
+        /* Center align items */
+    }
+
+    .navigation-links li,
+    .social-links li {
+        margin: 5px 0;
+    }
+
+    nav {
+        flex-direction: column;
+        /* Stack the nav elements vertically */
+    }
+}
+
+#greeting {
+    display: flex;
+    align-items: center;
+    /* Aligns items vertically in the center */
+    justify-content: space-between;
+    /* Spreads out the text and image */
+    padding: 100px;
+    /* Add padding as needed */
+    background-color: #000000;
+    margin-top: 2px;
+}
+
+.greeting-text, .greeting-text h1 {
+    flex-basis: 60%;
+    /* Takes up half the space */
+    /* Additional styling for your text here */
+    font-size: 2em;
+        /* Adjusts the font size */
+        /* Add other styles as per your design */
+    margin-left: 20px;
+    font-weight: bolder;
+    line-height: 1.4em;
+    letter-spacing: -.05em;
+    color: white;
+}
+
+.greeting-photo img {
+    width: 350px;
+    /* Adjust size as needed */
+    height: 350px;
+    /* Keep it equal to width for a circle */
+    border-radius: 50%;
+    /* Makes the image circular */
+    object-fit: cover;
+    /* Ensures the image covers the area without distortion */
+    display: flex;
+    /* Enables flexbox */
+    justify-content: center;
+    /* Centers content horizontally */
+    align-items: center;
+    /* Centers content vertically */
+    margin-right: 100px;
+}
+
+#about {
+        text-align: center;
+        /* Centers the text */
+        margin-top: 2px;
+        /* Adds some space between the nav bar and the greeting */
+        padding: 100px;
+        /* Adds padding inside the greeting section */
+        font-size: 2.4em;
+        /* Adjusts the font size */
+        /* Add other styles as per your design */
+        font-weight: bolder;
+        line-height: 1.4em;
+        font-style: normal;
+        letter-spacing: -.05em;
+        background-color: #ffffff;
+        color: rgb(0, 0, 0);
+
+    }
