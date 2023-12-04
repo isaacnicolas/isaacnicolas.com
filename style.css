@@ -109,7 +109,7 @@ nav .nav-logo img {
     /* Aligns items vertically in the center */
     justify-content: space-between;
     /* Spreads out the text and image */
-    padding: 100px;
+    padding: 150px;
     /* Add padding as needed */
     background-color: #000000;
     margin-top: 3px;
@@ -169,6 +169,8 @@ nav .nav-logo img {
 .pretty-underline {
     border-bottom: 5px solid #000000;
     /* Blue underline */
-    padding-bottom:15px;
+    padding-bottom:20px;
     /* Adjust space between text and underline */
+    position: relative;
+    display: inline-block;
         }
