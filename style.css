@@ -18,10 +18,11 @@ header {
     position: sticky;
     top: 0;
     /* Initial background color */
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, padding 0.5s;
     /* Smooth transition for background color change */
     z-index: 1000;
     /* Ensures the navbar stays on top of other content */
+    padding: 25px 10px;
 }
 
 nav {
@@ -30,7 +31,19 @@ nav {
     /* Adjusts spacing between navigation and social links */
     align-items: center;
     /* Vertically aligns items */
-    padding: 25px 10px;
+}
+
+nav .nav-logo {
+    /* Center the logo */
+    flex-grow: 1;
+    text-align: center;
+    margin-right: 20px;
+}
+
+nav .nav-logo img {
+    /* Adjust your logo size as needed */
+    height: 35px;
+    /* Example height */
 }
 
 .navigation-links,
@@ -38,7 +51,7 @@ nav {
     list-style: none;
     display: flex;
     margin-left: 20px;
-    margin-right: 50px;
+    margin-right: 60px;
 }
 
 .navigation-links li {
@@ -148,7 +161,14 @@ nav {
         line-height: 1.4em;
         font-style: normal;
         letter-spacing: -.05em;
-        background-color: #d8d8d8;
+        background-color: rgb(237, 237, 237);
         color: rgb(0, 0, 0);
 
     }
+
+.pretty-underline {
+    border-bottom: 5px solid #000000;
+    /* Blue underline */
+    padding-bottom:15px;
+    /* Adjust space between text and underline */
+        }
